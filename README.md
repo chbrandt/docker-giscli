@@ -25,4 +25,15 @@ Apparently, some tools are under private/payed use, while the core tools are fre
 In any case, until it is clear to me how it works, I will kindly ask you to download and build it on your own.
 
 
+# How to use it
+
+Once the container is initialized a Bash command-line will be at your disposal.
+Besides the GIS tools listed above, the environment provides a [Miniconda-3](https://conda.io/en/latest/miniconda.html) (aka Anaconda) environment. 
+Which means you have Python and all conda/virtualenvs structure at your disposal.
+
+Example of running the container with your local "tmp/" directory mounted inside container's `/work/host`.
+```bash
+$ docker run -it --rm -v $PWD/tmp:/work/host chbrandt/giscli
+```
+
 /.\
